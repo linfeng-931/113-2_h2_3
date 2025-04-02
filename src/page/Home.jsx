@@ -1,16 +1,13 @@
-import "tailwindcss";
 import books from '../../json/books_reviews.json'
 
 import Books from '../component/Books'
-import Navbar from '../component/Navbar'
-import Title from '../component/Title'
 import Footer from '../component/Footer'
+import Header from "../component/Header";
 
 function Home() {
   return (
     <>
-        <Title/> 
-        <Navbar/>
+      <Header/>
       <Books booklist={books}/>
       <Footer/>
     </>

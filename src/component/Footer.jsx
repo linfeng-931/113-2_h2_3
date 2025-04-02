@@ -2,8 +2,8 @@ import {Link} from 'react-router'
 function Footer(){
     return(
         <>
-        
-        <footer className= "footer sm:footer-horizontal p-10 mt-10 border-t-2">
+        <div className='wrapper'></div>
+        <footer className= "footer relative bottom-0 sm:footer-horizontal p-10 mt-10 border-t-2">
             <aside>
                 <svg
                 width="50"

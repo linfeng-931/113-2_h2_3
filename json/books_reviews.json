@@ -1,6 +1,6 @@
 [
     {
-      "ID": 1,
+      "id": 1,
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "category": "Social Fiction",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "ID": 2,
+      "id": 2,
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "category": "Bildungsroman",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "ID": 3,
+      "id": 3,
       "title": "1984",
       "author": "George Orwell",
       "category": "Social Fiction",
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "ID": 4,
+      "id": 4,
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
       "category": "Romantic Fiction",
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "ID": 5,
+      "id": 5,
       "title": "Moby-Dick",
       "author": "Herman Melville",
       "category": "Adventure",
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "ID": 6,
+      "id": 6,
       "title": "The Catcher in the Rye",
       "author": "J.D. Salinger",
       "category": "Adventure",

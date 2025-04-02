@@ -1,10 +1,9 @@
 import books from '../../json/books_reviews.json'
-import { useParams, Link } from "react-router";
-import _ from "lodash";
+import { useParams, Link } from "react-router"
+import _ from "lodash"
 import Books from '../component/Books'
-import Navbar from '../component/Navbar'
-import Title from '../component/Title'
 import Footer from '../component/Footer'
+import Header from "../component/Header"
 
 function Cate(){
     const {bookCate} = useParams();
@@ -15,8 +14,7 @@ function Cate(){
     console.log(_books);
     return(
         <>
-        <Title/>
-        <Navbar/>
+        <Header/>
         <Books booklist = {_books}/>
         <Footer/>
         </>

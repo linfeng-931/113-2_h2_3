@@ -1,28 +1,25 @@
-import "tailwindcss";
+import "tailwindcss"
 import books from '../../json/books_reviews.json'
-import { useParams, Link } from "react-router";
-import { useState } from "react";
+import { useParams, Link } from "react-router"
+import { useState } from "react"
 
 import Title from '../component/Title'
-// import HamMenu from '../component/HamMenu'
 import Footer from '../component/Footer'
+import AddToBasket from "../component/AddToBasket"
+import Cart from "../component/Cart"
 
 function ID() {
   const {bookID} = useParams();
   const book = books.find(
-    (x) => x.ID == bookID
+    (x) => x.id == bookID
   );
   const [qty, setQty] = useState(book.stock > 0 ? 1: 0);
-  // const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <div className="header relative">
-        {/* <HamMenu
-          className="left-0 top-4"
-          onClick={()=> setIsOpen(!isOpen)}
-          isOpen={isOpen}
-        /> */}
+      <div className="header relative mb-10">
         <Title/>
+        <Cart/>
       </div>
       <div className="w-full flex flex-col items-center">
         <div className="book-container w-[85%] grid gap-4 bg-black/50 backdrop-blur-md shadow-2xl rounded-3xl overflow-hidden  md:grid-col-5 lg:grid-cols-5">
@@ -60,9 +57,10 @@ function ID() {
                 
                 <h4>Total Price:{book.price*qty}</h4>
               </div>
-              <Link to='/'>
-                <button>Add To Basket</button>
-              </Link>
+              <AddToBasket
+                product={book}
+                qty={qty}
+              />
             </div>
           </div> 
         </div>
